@@ -55,7 +55,7 @@ main {
     gap: 10px;
 }
 
-.calendrier div {
+.calendrier div, .calendrier a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +69,8 @@ main {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.calendrier div:hover{
-    transform: translateX(-10px) translateY(-10px);        
+.calendrier div:hover { /*effet .calendriera:hover*/
+    transform: translateX(-8px) translateY(-8px);        
 }
 
 .popup {
@@ -81,6 +81,7 @@ main {
     color: #F7E0A3;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .close {
@@ -91,27 +92,79 @@ main {
 a {
     text-decoration: none;  
     color: inherit;
+    height: 100%;
+    width: 100%; 
 }
 
 .ouvert {
     display: flex;
     flex-direction: column-reverse;
+    opacity: 0.4;
 }
 
+.space {
+    padding-bottom: 3%;
+}
+
+.espace {
+    padding-bottom: 8%;
+}
+
+.img_close {
+    width: 40%;
+}
+
+.container_close {
+    display: flex;
+    align-items: center;
+}
+
+.style_lien:hover {    
+    text-decoration: underline;
+} 
+
 /*Cases*/
-.case1 { 
+.case01 { 
     background-color: #F7E0A3;
 }
 
-.case17 { 
-    background-color: #F0D07A;
-}
-
-.case22 { 
+.case02 { 
     background-color: #E0C25A;
 }
 
-.case8 { 
+.case03 { 
+    background-color: #F0D07A;
+}
+
+.case05 { 
+    background-color: #F0D07A;
+}
+
+.case04 { 
+    background-color: #F0D07A;
+}
+
+.case05 { 
+    background-color: #F0D07A;
+}
+
+.case06 { 
+    background-color: #F0D07A;
+}
+
+.case07 { 
+    background-color: #F0D07A;
+}
+
+.case08 { 
+    background-color: #C78203;
+}
+
+.case09 { 
+    background-color: #C78203;
+}
+
+.case10 { 
     background-color: #C78203;
 }
 
@@ -119,67 +172,27 @@ a {
     background-color: #F7E0A3;
 }
 
+.case12 { 
+    background-color: #C78203;
+}
+
 .case13 { 
     background-color: #C78203;
-}
-
-.case24 { 
-    background-color: #C78203;
-}
-
-.case2 { 
-    background-color: #E0C25A;
-}
-
-.case21 { 
-    background-color: #F7E0A3;
-}
-
-.case7 { 
-    background-color: #F0D07A;
-}
-
-.case16 { 
-    background-color: #E0C25A;
-}
-
-.case20 { 
-    background-color: #F7E0A3;
-}
-
-.case6 { 
-    background-color: #F0D07A;
 }
 
 .case14 { 
     background-color: #F7E0A3;
 }
 
-.case10 { 
-    background-color: #C78203;
-}
-
 .case15 { 
     background-color: #E0C25A;
 }
 
-.case12 { 
-    background-color: #C78203;
-}
-
-.case3 { 
-    background-color: #F0D07A;
-}
-
-.case19 { 
+.case16 { 
     background-color: #E0C25A;
 }
 
-.case9 { 
-    background-color: #C78203;
-}
-
-.case5 { 
+.case17 { 
     background-color: #F0D07A;
 }
 
@@ -187,26 +200,32 @@ a {
     background-color: #F7E0A3;
 }
 
-.case4 { 
-    background-color: #F0D07A;
+.case19 { 
+    background-color: #E0C25A;
+}
+
+.case20 { 
+    background-color: #F7E0A3;
+}
+
+.case21 { 
+    background-color: #F7E0A3;
+}
+
+.case22 { 
+    background-color: #E0C25A;
 }
 
 .case23 { 
     background-color: #E0C25A;
 }
 
+.case24 { 
+    background-color: #C78203;
+}
 
 
-
-
-
-
-
-
-
-
-
-@keyframes sparkle {
+/* @keyframes sparkle {
     0% { 
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 15px rgba(255, 255, 255, 0.2); /* Faible éclat au départ */
     }
@@ -222,9 +241,9 @@ a {
     100% { 
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 15px rgba(255, 255, 255, 0.2); /* Retour à un éclat faible */
     }
-}
+} */
 
-.calendrier p {
+.calendrier span {
     border: 2px solid transparent;
     animation: sparkle 1s infinite alternate;
 } 
