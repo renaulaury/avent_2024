@@ -21,6 +21,7 @@ body::before { /*avant contenu principal*/
     background-image: url("../images/noel_robot.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.7;
     z-index: -1;
 }
@@ -37,10 +38,193 @@ h1:hover {
         transform:scale(1.15);
     }
 
-input {
-    border: 2px solid purple;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-input:focus {
-    border: 2px solid blue;
+.calendrier {
+    position: absolute;
+    width: 80vh;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 20%);
+    gap: 10px;
 }
+
+.calendrier div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: navy;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7), 
+                0 12px 10px rgba(255, 255, 255, 0.2) inset,
+                0 -10px 20px rgba(0, 0, 0, 0.5) inset;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calendrier div:hover{
+    transform: translateX(-10px) translateY(-10px);        
+}
+
+.popup {
+    position: relative;
+    padding: 0.5% 6% 6% 6%;
+    border-radius: 15px;
+    background-color: rgba(128, 145, 165, 0.8);
+    color: #F7E0A3;
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    text-align: right;
+    padding-bottom: 5%;
+}
+
+a {
+    text-decoration: none;  
+    color: inherit;
+}
+
+.ouvert {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*Cases*/
+.case1 { 
+    background-color: #F7E0A3;
+}
+
+.case17 { 
+    background-color: #F0D07A;
+}
+
+.case22 { 
+    background-color: #E0C25A;
+}
+
+.case8 { 
+    background-color: #C78203;
+}
+
+.case11 { 
+    background-color: #F7E0A3;
+}
+
+.case13 { 
+    background-color: #C78203;
+}
+
+.case24 { 
+    background-color: #C78203;
+}
+
+.case2 { 
+    background-color: #E0C25A;
+}
+
+.case21 { 
+    background-color: #F7E0A3;
+}
+
+.case7 { 
+    background-color: #F0D07A;
+}
+
+.case16 { 
+    background-color: #E0C25A;
+}
+
+.case20 { 
+    background-color: #F7E0A3;
+}
+
+.case6 { 
+    background-color: #F0D07A;
+}
+
+.case14 { 
+    background-color: #F7E0A3;
+}
+
+.case10 { 
+    background-color: #C78203;
+}
+
+.case15 { 
+    background-color: #E0C25A;
+}
+
+.case12 { 
+    background-color: #C78203;
+}
+
+.case3 { 
+    background-color: #F0D07A;
+}
+
+.case19 { 
+    background-color: #E0C25A;
+}
+
+.case9 { 
+    background-color: #C78203;
+}
+
+.case5 { 
+    background-color: #F0D07A;
+}
+
+.case18 { 
+    background-color: #F7E0A3;
+}
+
+.case4 { 
+    background-color: #F0D07A;
+}
+
+.case23 { 
+    background-color: #E0C25A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes sparkle {
+    0% { 
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 15px rgba(255, 255, 255, 0.2); /* Faible éclat au départ */
+    }
+    25% { 
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 60px rgba(255, 255, 255, 0.3); /* Plus intense */
+    }
+    50% { 
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.7), 0 0 60px rgba(255, 255, 255, 0.8), 0 0 120px rgba(255, 255, 255, 0.9); /* Forte brillance */
+    }
+    75% { 
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 80px rgba(255, 255, 255, 0.4); /* Moins intense mais encore visible */
+    }
+    100% { 
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 15px rgba(255, 255, 255, 0.2); /* Retour à un éclat faible */
+    }
+}
+
+.calendrier p {
+    border: 2px solid transparent;
+    animation: sparkle 1s infinite alternate;
+} 
