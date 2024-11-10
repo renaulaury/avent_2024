@@ -82,11 +82,31 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin:5%;
 }
 
 .close {
     text-align: right;
     padding-bottom: 5%;
+}
+
+.img_close {
+    width: 70%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container_close {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.display_cat {
+    padding-left: 3%;
 }
 
 a {
@@ -108,15 +128,6 @@ a {
 
 .espace {
     padding-bottom: 8%;
-}
-
-.img_close {
-    width: 40%;
-}
-
-.container_close {
-    display: flex;
-    align-items: center;
 }
 
 .style_lien:hover {    
