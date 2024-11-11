@@ -20,7 +20,7 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 1000,
         density: {
           enable: true,
           value_area: 800
@@ -1506,8 +1506,8 @@ window.particlesJS = function(tag_id, params){
   canvas_el.className = pJS_canvas_class;
 
   /* set size canvas */
-  canvas_el.style.width = "100%";
-  canvas_el.style.height = "100%";
+  canvas_el.style.width = "100vw";
+  canvas_el.style.height = "100vh";
 
   /* append canvas */
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);

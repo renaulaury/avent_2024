@@ -174,7 +174,7 @@ audio {
 }
 
 .calendrier div:active {
-    animation: rotate 0.4s forwards;
+    animation: flip 0.5s forwards;
 }
 
 /*Etoiles*/
@@ -192,7 +192,7 @@ audio {
       0 0 30px rgba(255, 255, 255, 0.6),
       0 0 40px rgba(255, 255, 255, 1);
     opacity: 1;
-    animation-delay: 0s; 
+    animation-delay: calc(0.5s * var(--delay));
   }
 
 @keyframes blinkAnim {
@@ -205,6 +205,7 @@ audio {
 #particleJS {
     position: fixed;
     height:100vh;
+    width: 100vw;
     mix-blend-mode:screen;
 }
 
