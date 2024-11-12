@@ -1,4 +1,8 @@
 /*Général*/
+* {
+    margin: 0;
+    padding: 0;
+}
 .calendrier {
     width:auto;
     height:auto;
@@ -29,7 +33,7 @@ body::before { /*avant contenu principal*/
 
 h1 {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 3%;
     color: pink;
     cursor:pointer;
     transition: transform 1000ms;
