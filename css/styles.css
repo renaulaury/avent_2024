@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .calendrier {
     width:auto;
     height:auto;
@@ -33,15 +34,22 @@ body::before { /*avant contenu principal*/
 
 h1 {
     text-align: center;
-    padding-top: 3%;
+    padding-top: 4%;
     color: pink;
     cursor:pointer;
     transition: transform 1000ms;
 }
 
 h1:hover {
-        transform:scale(1.15);
-    }
+    transform:scale(1.15);
+}
+
+h3 {
+    padding-top: 5%;
+    text-align: center;
+    color: pink;
+    /* background-color: #7A513C; */
+}
 
 /*Général calendrier*/
 main {
@@ -152,22 +160,6 @@ audio {
 }
 
 /*cases*/
-/* .case01, .case11, .case14, .case18, .case20, .case21 {
-    background-color: #8b5f33; 
-}
-
-.case02, .case15, .case16, .case19, .case22, .case23 {
-    background-color: #b97b2f;
-}
-
-.case03, .case05, .case04, .case06, .case07, .case17 {
-    background-color: #e0a96d; 
-}
-
-.case08, .case09, .case10, .case12, .case13, .case24 {
-    background-color: #c78203; 
-} */
-
 .case01 {
     background-color: #8B5F33;
 }
