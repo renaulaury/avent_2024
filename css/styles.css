@@ -2,7 +2,7 @@
 .mountains-of-christmas-regular {
     font-family: "Mountains of Christmas", serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: bold;
   }
   
   .mountains-of-christmas-bold {
@@ -57,10 +57,11 @@ h1:hover {
     transform:scale(1.15);
 }
 
-h3 {
+h2 {
     padding-top: 5%;
     text-align: center;
     color: pink;
+    font-size: 1.3em;
 }
 
 /*Général calendrier*/
@@ -146,8 +147,8 @@ main {
 a {
     text-decoration: none;  
     color: inherit;
-    /* height: 100%;
-    width: 100%;  */
+    height: 100%;
+    width: 100%; 
 }
 
 .ouvert {
