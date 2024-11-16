@@ -79,7 +79,7 @@ main {
 .calendrier {
     position: absolute;
     height: auto;
-    width: 90%;
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 100px);
