@@ -57,8 +57,12 @@ h1:hover {
     transform:scale(1.15);
 }
 
+.titre_pad {
+    padding-bottom:4%;
+}
+
 h2 {
-    padding-top: 5%;
+    padding-top: 2%;
     text-align: center;
     color: pink;
     font-size: 1.3em;
